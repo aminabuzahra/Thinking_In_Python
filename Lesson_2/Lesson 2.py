@@ -1,44 +1,44 @@
-# name = input("Enter you name: ")
-# age = input("Enter your age:")
-# number = int(input("Enter a number:"))
+name = input("Enter you name: ")
+age = input("Enter your age:")
+number = int(input("Enter a number:"))
 
-# print("Hello " + name + "! Your age is: " + age + " The (number + 2) is: " + str(number + 2))
+print("Hello " + name + "! Your age is: " + age + " The (number + 2) is: " + str(number + 2))
 
 # f strings:
 
-# print(f"Hello {name}! Your age is: {age} The (number + 2) is: {number + 2}")
+print(f"Hello {name}! Your age is: {age} The (number + 2) is: {number + 2}")
 
-# print("Hello" , name , "! Your age is:" , age , "The (number + 2) is:" , number + 2)
+# other way:
+print("Hello" , name , "! Your age is:" , age , "The (number + 2) is:" , number + 2)
 
-# print (number + number)
-
-# ==============================
+# + sign means addition here
+print (number + number)
 
 # Arithmatic Operations:
+# ==============================
 
-# print(1+1) # 2
-# print(5-3) # 2
-# print(2*3) # 6
-# print(10 / 2) # 5
-# 
-# print(11/2) # 5.5
-# print(11 // 2) # 5
-# print(11 % 2) # 1
-# 
-# print(3 ** 5) # 3 * 3 * 3 * 3 * 3
-# print (25 ** 0.5) # 5
+print(1+1) # 2
+print(5-3) # 2
+print(2*3) # 6
+print(10 / 2) # 5
+
+print(11/2) # 5.5
+print(11 // 2) # 5
+print(11 % 2) # 1
+
+print(3 ** 5) # 3 * 3 * 3 * 3 * 3
+print (25 ** 0.5) # 5
 
 # Priorities in Arithmatic Operations:
-
-# print( 3 * 3 + 3 / 3 - 3 ) #7
-
-# PEMDAS 
+# PEMDAS
 # Parenthesis ( )  الأقواس
 # Exponent القوة **
 # Multiply, Division ضرب
 # Addition Subtraction جمع
 # Left يسار
 # Right يمين
+
+print( 3 * 3 + 3 / 3 - 3 ) #7
 
 # Comparison opertators, result True or False
 # >
@@ -48,25 +48,22 @@
 # ==  يساوي
 # !=  لا
 
+age = 19
+adult = age > 17 # True
+print (adult)
 
-# age = 19
-# # adult = True # boolean
-# adult = age > 17 # True
-# print (adult)
+wealth = 1_030_010_083
+forbidden = wealth < 1_000_000
 
-# wealth = 1_030_010_083
-# forbidden = wealth < 1_000_000
-# 
-# print(forbidden)
+print(forbidden)
 
-# number = int(input("enter a guess: "))
-# correct = number <= 11
-# print(correct)
+number = int(input("enter a guess: "))
+correct = number <= 11
+print(correct)
 
-# number = int(input("enter a guess: "))
-# correct = number >= 12 and number >= 15 # 12 -> 15
-# print(correct)
-
+number = int(input("enter a guess: "))
+correct = number >= 12 and number <= 15 # 12 -> 15
+print(correct)
 
 # Logical Operators
 # and
@@ -75,68 +72,43 @@
 # False and True => False
 # False and False => False
 
-# number = int(input("enter a guess: "))
-# correct = number <= 12 or number >= 15 
-# print(correct)
-
 # or
 # True or True => True
 # True or False => True
 # False or True => True
 # False or False => False
 
-# a = True
-# b = not a
-# print (b)
-
 # not
 # not True => False
 # not False => True
 
-# assignement operators:
+number = int(input("enter a guess: "))
+correct = number <= 12 or number >= 15
+print(correct)
 
-# a = 10
-# 
-# a += 10 # a = a + 1
-# a -= 3
-# a *= 2
-# a /= 2
-# a %= 17
-# 
-# b = 2
-# b **= 2
-# 
-# print(a)
-# print(b)
+a = True
+b = not a
+print (b)
+
+# assignment operators:
+
+a = 10
+
+a += 10 # a = a + 1
+a -= 3
+a *= 2
+a /= 2
+a %= 17
+
+b = 2
+b **= 2
+
+print(a)
+print(b)
 
 # math functions
 # round
 
-# tomato_bill = 10.532_876
-# bill = round(tomato_bill , 2)
-# print (bill)
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+tomato_bill = 10.532_876
+bill = round(tomato_bill , 2)
+print (bill)
