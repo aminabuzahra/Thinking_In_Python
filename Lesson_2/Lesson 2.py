@@ -40,7 +40,7 @@ print (25 ** 0.5) # 5
 
 print( 3 * 3 + 3 / 3 - 3 ) #7
 
-# Comparison opertators, result True or False
+# Comparison operators, result True or False
 # >
 # <
 # >=
