@@ -1,15 +1,14 @@
 # import turtle
-
 from turtle import Turtle
 
 t = Turtle()
-# t.screen.exitonclick()
 
-angle = 60
+angle = 90
 
-for i in ["blue", "red", "orange"]:
-    t.color(i)
-    angle += 30
+t.color("blue")
+t.speed(0)
+for i in range(37):    
+    t.right(10)
     for j in range (4):
-        t.forward(100)
         t.right(angle)
+        t.forward(100)
