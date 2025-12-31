@@ -3,12 +3,12 @@ from turtle import Turtle
 
 t = Turtle()
 
-angle = 90
+angle = 120
 
-t.color("blue")
+t.color("red")
 t.speed(0)
 for i in range(37):    
     t.right(10)
-    for j in range (4):
+    for j in range(3):
         t.right(angle)
         t.forward(100)
