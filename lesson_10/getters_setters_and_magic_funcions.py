@@ -11,11 +11,11 @@ class character:
         return self._bonus + 5
     
     @bonus.setter # setter
-    def bonus(self, bonus):
-        if bonus > 100:
+    def bonus(self, value):
+        if value > 100:
             self._bonus = 100
         else:
-            self._bonus = bonus
+            self._bonus = value
             
 #     def prnt(self):
 #         print (f"Name: {self.name}, Age: {self.age}, Bonus = {self._bonus}")
