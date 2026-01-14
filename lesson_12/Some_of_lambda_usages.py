@@ -76,3 +76,4 @@ print(evens)
 
 x = list(map(lambda x : x * x, b))
 print(x)
+
