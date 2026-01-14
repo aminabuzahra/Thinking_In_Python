@@ -42,11 +42,19 @@ print (list(sss))
 
 class Student:
     def __init__(self, name, mark):
-        self.name = name
-        self.mark = mark
+        self._name = name
+        self._mark = mark
     
     def __str__(self):
-        return f"Name is {self.name}, and mark = {self.mark}"
+        return f"Name is {self._name}, and mark = {self._mark}"
+    
+    @property
+    def mark(self):
+        return self._mark
+    
+    @mark.setter
+    def mark(self, value):
+        self._mark = value
 
 students = [Student("Subhi",55), Student("Khader", 70), Student("Abbas", 0)]
 sss = list(sorted(students, key = lambda x: x.mark, reverse = True))
@@ -76,4 +84,3 @@ print(evens)
 
 x = list(map(lambda x : x * x, b))
 print(x)
-
