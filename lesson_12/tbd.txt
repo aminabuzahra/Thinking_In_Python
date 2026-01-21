@@ -1,2 +1,13 @@
 # list comprehesnsion
-# match - case
+# sum()
+# inhertiance
+# polymorphism
+# set
+
+# match - case -- python 3.10 +
+
+# decorators
+# unit testing
+
+
+

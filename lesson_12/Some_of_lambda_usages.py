@@ -1,6 +1,6 @@
 # Some of lambda usages
 # 1- Sorting
-# =======
+# ==========
 
 a = [5,-2,4,2,10]
 a.sort()
@@ -9,15 +9,23 @@ print(a)
 
 d = [("Subhi", 3),
      ("Abbas", 1_000_000),
-     ("Khader", 5),
+     ("Khader", -5),
      ("Jumaah", 4)
      ]
+
 
 # def k(x):
 #     return x[1]
 #     
 # d.sort(key = k)
 
+# First method:
+def raseed(x):
+    return x[1]
+
+d.sort(key = raseed, reverse = True)
+
+# Second method:
 d.sort(key = lambda x : x[1], reverse = True)
 
 print(d)
@@ -33,10 +41,16 @@ print(d)
 d2 = {"Subhi" : 3,
       "Abbas" : 1_000_000,
       "Khader" : 5,
-      "Jumaah" : 4
+      "Jumaah" : -4
      }
 
-sss = sorted(d2.items(), key = lambda x : x[1])
+print ("=" * 50 )
+print (d2.keys())
+print (d2.values())
+print (d2.items())
+print ("=" * 50 )
+
+sss = sorted(d2.items(), key = lambda x : x[1], reverse = True)
 print (list(sss))
 
 
@@ -84,3 +98,13 @@ print(evens)
 
 x = list(map(lambda x : x * x, b))
 print(x)
+
+# 4- min() / max()
+# ================
+# functions syntax:
+# min(dictionary object d, d.get
+
+minimum = min(d2, key = d2.get)
+maximum = max(d2, key = d2.get)
+print (minimum)
+print (maximum)

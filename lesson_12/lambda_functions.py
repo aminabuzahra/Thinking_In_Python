@@ -10,6 +10,9 @@
 # lambda parameters : expression
 # paramateres can be 0, or 1, or many
 
+def add(x,y):
+    return x+y
+
 add = lambda x,y : x+y
 
 print (add(1,2))
@@ -17,8 +20,8 @@ print (add(1,2))
 power = lambda x : x * x
 print (power(3))
 
-p = lambda : print("Subhi")
-p()
+p = lambda : "Subhi"
+print (p())
 
 even = lambda x : "even" if x % 2 == 0 else "odd"
 print (even(9))
