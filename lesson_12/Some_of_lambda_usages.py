@@ -99,12 +99,3 @@ print(evens)
 x = list(map(lambda x : x * x, b))
 print(x)
 
-# 4- min() / max()
-# ================
-# functions syntax:
-# min(dictionary object d, d.get
-
-minimum = min(d2, key = d2.get)
-maximum = max(d2, key = d2.get)
-print (minimum)
-print (maximum)
