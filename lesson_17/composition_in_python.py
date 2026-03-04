@@ -30,7 +30,7 @@ class Body:
     def __init__(self, body_color):
         self.body_color = body_color
 
-class Car: # Car has an Engine ==> Composition
+class Car: # Car has an Engine ==> Composition. Own(has) relation
     
     def __init__(self, engine, number_of_wheels): # engine is injected to this class
         

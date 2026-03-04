@@ -21,7 +21,7 @@ class TestDatabase(Database): # Fake database
     def store_record(self, data):
         print (f"Just testing")
 
-class AccountingSystem: # Agreegation (Weak Composition)
+class AccountingSystem: # Agreegation (Weak Composition). Has relationship
     
     def __init__(self, database = TestDatabase()): # database injection
         self._database = database

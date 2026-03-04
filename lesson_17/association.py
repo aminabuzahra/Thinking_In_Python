@@ -21,12 +21,12 @@ class TestDatabase(Database): # Fake database
     def store_record(self, data):
         print (f"Just testing")
 
-class AccountingSystem: # Association (Weakest Composition)
+class AccountingSystem: # Association (Weakest Composition). Is Using relationship
     
     def __init__(self): # no injection !
         pass
         
-    def store_accounting_interaction(self, data, database): # delegation
+    def store_accounting_interaction(self, data, database): # injection and delegation
         database.store_record(data)
 
 mongoDB = MongoDB()
