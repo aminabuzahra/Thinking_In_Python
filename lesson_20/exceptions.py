@@ -1,5 +1,6 @@
 # handling exceptions:
-# ===================
+# ====================
+
 # syntax 1: catching exceptions
 #   try:
 #       # code that can raise exception
@@ -29,4 +30,5 @@ for i in range (20):
     print(divide_by(number, i - 10))
 
 print("Subhi")
+
 
