@@ -11,7 +11,7 @@ if [ $RESULT -ne 0 ]; then
     exit 1
 fi
 
-echo "Tests passed. Proceeding with push..."
+echo "Tests passed. Proceeding with add, commit and push..."
 git add .
 git commit -m "lesson_21"
 git push
