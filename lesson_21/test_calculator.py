@@ -2,11 +2,12 @@ import unittest
 import calculator
 
 # Unit Testing terminology:
-# Test Case فحص حالة واحدة فقط
-# Test Suite فحص عدة حالات في آن واحد
-# Test Runner: الفاحص
-# Test ......: المفحوص
-# ...........: Preparing and releasing
+# =========================
+# Test Case       : فحص حالة واحدة فقط
+# Test Suite      : فحص عدة حالات في آن واحد
+# Test Runner     : الفاحص
+# Unit Under Test : المفحوص
+# Test Fixture    : Preparing and releasing
 
 class TestMyCalculator(unittest.TestCase):
     def test_add_numbers(self):
