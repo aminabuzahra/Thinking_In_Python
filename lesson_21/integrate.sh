@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Run unittests
-python3 -m unittest
+python3 -m unittest -v
 
 # Capture the exit code of the tests
 RESULT=$?
